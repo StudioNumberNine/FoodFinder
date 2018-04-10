@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+	<link rel="manifest" href="assets/images/favicons/site.webmanifest">
+	<link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="assets/images/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="msapplication-config" content="assets/images/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta charset="utf-8">
+	<title>FoodFinder</title>
+	<link rel="stylesheet" href="styles.css">
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div id="header">
+		<h1 id="appName">FoodFinder</h1>
+		<p>Can't decide where to eat? Let me decide for you!</p>
+	</div>
+	<div id="main">
+		<div id="choiceOptions">
+			<input type="text" id="choiceOptionsInput" placeholder="Enter a few choice options...">
+			<button id="choiceOptionsSubmit">Add To List</button>
+			<h1>Choices:</h1>
+			<ul id="choiceOptionsOutput">
+				
+			</ul>
+		</div>
+		<div id="selection">
+			<button id="selectionSubmit">Decide!</button>
+			<h1>Your should eat: </h1>
+			<h1 id="selectionOutput">
+
+			</h1>
+		</div>
+	</div>
+	<div id="debug">
+		<button id="saveArray">Save Array</button>
+		<button id="loadArray">Load Saved Array</button>
+		<button id="clearArray">Clear Saved Array</button>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="main.js"></script>
+</body>
+
+</html>
